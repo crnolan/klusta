@@ -115,7 +115,7 @@ def klustakwik(model=None,
         if iter_callback:
             iter_callback(kk.clusters)
 
-    kk.cluster_mask_starts()
+    kk.cluster_mask_or_random_starts()
     spike_clusters = kk.clusters
     params = kk.params
     params['version'] = __version__
