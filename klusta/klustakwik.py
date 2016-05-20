@@ -119,7 +119,7 @@ def klustakwik(model=None,
 
     # Launch KK.
     if spike_clusters is None:
-        kk.cluster_mask_starts()
+        kk.cluster_mask_or_random_starts()
     else:
         kk.cluster_from(spike_clusters)
     spike_clusters = kk.clusters
